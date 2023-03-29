@@ -8,6 +8,14 @@ body {
     background-position: center, bottom right;
 }
 
+@media screen and (min-width: 899px) {
+    body {
+        background: url(../images/bg-stars.svg) no-repeat, url(../images/pattern-hills.svg) no-repeat, rgba(29, 30, 40, 1);
+        background-size: 100%, 100%;
+        background-position: center, bottom right;
+    }
+}
+
 main {
     display: flex;
     justify-content: center;
