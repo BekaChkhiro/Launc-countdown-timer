@@ -65,4 +65,8 @@
         right: -26px;
         border-radius: 12px;
     }
+
+    .social-icons img {
+        cursor: pointer;
+    }
 }
