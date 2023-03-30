@@ -12,19 +12,21 @@ body {
     body {
         background: url(../images/bg-stars.svg) no-repeat, url(../images/pattern-hills.svg) no-repeat, rgba(29, 30, 40, 1);
         background-size: 100%, 100%;
-        background-position: center, bottom right;
+        background-position: center, bottom;
     }
 }
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* timer div */
 
 .timer-div {
     margin-top: 142px;
+    margin-bottom: 259px;
     width: 327px;
     display: flex;
     flex-direction: column;
@@ -35,7 +37,7 @@ main {
 
 /* timer heading */
 
-.timer-heading {
+.timer-heading h1 {
     color: rgba(255, 255, 255, 1);
     width: 327px;
     font-size: 18px;
@@ -72,7 +74,7 @@ main {
     text-align: center;
 }
 
-.timer-box span {
+.timer-item span {
     color: rgba(251, 94, 132, 1);
     width: 48px;
     font-size: 36px;
@@ -94,6 +96,7 @@ main {
     transition: all .4s ease-in;
     transform-style: preserve-3d;
     cursor: pointer;
+    border-bottom: 3px solid rgba(25, 26, 35, 1);
 }
 
 .timer-item.active {
@@ -120,5 +123,13 @@ main {
     margin-left: -3px;
     background-color: rgba(25, 26, 35, 1);
     border-radius: 3px;
-    right: -11px;
+    right: -12px;
+}
+
+/* social icons */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
